@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>웹 페이지</title>
+        <script>
+            // 화면 구성이 완료 되면
+            window.onload = () => {
+                // h1 태그 내부의 문자를 변경합니다..
+                var header = document.getElementById('header');
+                header.innerHTML = '<i>i 태그입니다</i> <br />';
+                header.innerHTML += '&lt;i&gt;i 태그입니다.&lt;/i&gt;';
+            };
+        </script>
+    </head>
+    <body>
+        <h1 id="header">Header 1</h1>
+    </body>
+</html>
