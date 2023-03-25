@@ -34,7 +34,6 @@ export default function AppMentors() {
             onClick={() => {
               const age = prompt("추억할 시절을 알려주세요");
               const food = prompt("좋아했던 음식을 알려주세요");
-
               setUser((user) => ({
                 ...user,
                 favorites: [...user.favorites, { class: age, food }],
@@ -47,7 +46,6 @@ export default function AppMentors() {
             onClick={() => {
               const age = prompt("추억할 시절을 알려주세요");
               const food = prompt("좋아했던 음식을 알려주세요");
-
               setUser((user) => ({
                 ...user,
                 favorites: [
