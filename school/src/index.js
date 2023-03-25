@@ -2,13 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import NotificationList from "./chaptor_6/NotificationList";
-import DarkOrLight from "./chaptor_14/DarkOrLight";
+import AppChampionStore from "./chaptor_0/AppChampionStore";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <DarkOrLight />
+    <AppChampionStore />
   </React.StrictMode>
 );
 
