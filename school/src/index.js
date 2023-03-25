@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import NotificationList from "./chaptor_6/NotificationList";
+import DarkOrLight from "./chaptor_14/DarkOrLight";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <NotificationList />
+    <DarkOrLight />
   </React.StrictMode>
 );
 
