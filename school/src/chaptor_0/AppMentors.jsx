@@ -1,38 +1,22 @@
-import React, { useState } from "react";
-
+import React, { useReducer, useState } from "react";
+import PersonReducer from "./reducer/Person-reducer";
 export default function AppMentors() {
-  const [user, setUser] = useState(input_data);
+  //   const [user, setUser] = useState(input_data);
+  const [user, dispatch] = useReducer(PersonReducer, input_data);
 
   const addAge = () => {
     const age = prompt("추억할 시절을 알려주세요");
     const food = prompt("좋아했던 음식을 알려주세요");
-    setUser((prev) => ({
-      ...prev,
-      favorites: [...prev.favorites, { class: age, food }],
-    }));
+    dispatch({ type: "added", age, food });
   };
   const modifyFood = () => {
     const age = prompt("추억할 시절을 알려주세요");
     const new_food = prompt("좋아했던 음식을 알려주세요");
-    setUser((prev) => ({
-      ...prev,
-      favorites: [
-        ...prev.favorites.map((favorite) => {
-          return favorite.class === age ? { ...favorite, food: new_food } : favorite;
-        }),
-      ],
-    }));
+    dispatch({ type: "updated", age, new_food });
   };
   const deleteAge = () => {
     const age = prompt("추억할 시절을 알려주세요");
-    setUser((prev) => ({
-      ...prev,
-      favorites: [
-        ...prev.favorites.filter((favorite) => {
-          return favorite.class !== age;
-        }),
-      ],
-    }));
+    dispatch({ type: "deleted", age });
   };
   return (
     <>
