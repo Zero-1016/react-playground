@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import AppMentors from "./chaptor_0/AppMentors";
+import AppFood from "./chaptor_0/AppFood";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AppMentors />
+    <AppFood />
   </React.StrictMode>
 );
 

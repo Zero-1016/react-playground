@@ -1,19 +1,19 @@
-export default function PersonReducer(person, action) {
+export default function PersonReducer(user, action) {
   switch (action.type) {
     case "added": {
       const { age, food } = action;
       return {
-        ...prev,
-        favorites: [...prev.favorites, { class: age, food }],
+        ...user,
+        favorites: [...user.favorites, { class: age, food }],
       };
     }
 
     case "updated": {
       const { age, new_food } = action;
       return {
-        ...prev,
+        ...user,
         favorites: [
-          ...prev.favorites.map((favorite) => {
+          ...user.favorites.map((favorite) => {
             return favorite.class === age ? { ...favorite, food: new_food } : favorite;
           }),
         ],
@@ -22,10 +22,10 @@ export default function PersonReducer(person, action) {
     case "deleted": {
       const { age } = action;
       return {
-        ...prev,
+        ...user,
         favorite: [
-          ...prev.favorites.filter((favorite) => {
-            favorite.class !== age;
+          ...user.favorites.filter((favorite) => {
+            return favorite.class !== age;
           }),
         ],
       };
