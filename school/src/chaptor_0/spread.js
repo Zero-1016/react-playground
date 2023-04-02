@@ -1,39 +1,13 @@
-"use strict";
-
-const user = {
-  name: "지형",
-  age: 23,
-  favorites: [
-    {
-      class: "초등학생",
-      drama: "태왕사신기",
-      food: "왕뚜껑",
-    },
-    {
-      class: "중학생",
-      drama: "동이",
-      food: "팔도비빔면",
-    },
-  ],
-};
-
-let user1 = { name: "지형" };
-let info = { age: 30, gender: "male" };
-let fe = ["JS", "React"];
-let lang = ["Korean", "English"];
-
-let user2 = {
-  ...user1,
-  ...info,
-  age: 23,
-  skills: [...fe, ...lang],
-};
-
-user1.skills = [...fe, ...lang];
-
-console.log(...fe, ...lang);
-console.log(user2);
-
-console.log(...info);
-// let info = { age: 30, gender: "male" };
-// TypeError: Found non-callable @@iterator
+const num1 = 1;
+const num2 = num1 * 3; // num2 = 3
+const str1 = "문자";
+const str2 = str1 + "추가"; // str2 = '문자 추가'
+const arr3 = [];
+const arr4 = arr3.concat(1); // arr4 = [1]
+const arr5 = [...arr4, 2, 3]; // arr5 = [1, 2, 3],
+const arr6 = arr5.slice(0, 1); // arr6 = [1], arr5 = [1, 2, 3]
+const [first, ...arr7] = arr5; // arr7 = [2, 3], first =1
+const obj3 = { name: "내이름", age: 20 };
+const objValue = { name: "새이름", age: obj3.age };
+const obj4 = { ...obj3, name: "새이름" }; // obj4 = { name: '새이름', age: 20}
+const { name, ...obj5 } = obj4; // obj5 = {age: 20}
