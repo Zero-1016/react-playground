@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import AppFood from "./chaptor_0/AppFood";
+import KoreaIT from "./chaptor_0/homework/KoreaIT";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AppFood />
+    <KoreaIT />
   </React.StrictMode>
 );
 
