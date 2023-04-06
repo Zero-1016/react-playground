@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>웹 페이지</title>
+        <script>
+            // 화면 구성이 완료 되면
+            window.onload = () => {
+                // 문서 객체를 선택합니다.
+                var headers = document.querySelectorAll('h1');
+
+                headers.forEach((header) => {
+                    header.style.color = 'orange';
+                    header.style.backgroundColor = 'red';
+                    header.innerHTML = 'From JavaScript';
+                });
+            };
+        </script>
+    </head>
+    <body>
+        <h1>Header 1</h1>
+        <h1>Header 1</h1>
+        <h1>Header 1</h1>
+    </body>
+</html>

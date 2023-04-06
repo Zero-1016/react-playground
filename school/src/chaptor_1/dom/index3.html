@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>문서 객체 선택</title>
+        <script>
+            window.onload = () => {
+                // 문서 객체를 선택합니다.
+                let header = document.getElementById('header');
+
+                // 문서 객체의 스타일을 변경합니다.
+                header.style.color = 'white';
+                header.style.border = '1px solid black';
+                header.style.textAlign = 'center';
+                header.style.background = 'black';
+            };
+        </script>
+    </head>
+    <body>
+        <h1 id="header">Title</h1>
+    </body>
+</html>
