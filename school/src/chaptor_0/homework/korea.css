@@ -1,0 +1,36 @@
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  width: 1024px;
+}
+
+.disp {
+  height: 200px;
+  border: 1px solid black;
+}
+
+.tab_host {
+  display: flex;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tab:hover {
+  cursor: pointer;
+}
+
+.tab {
+  width: 200px;
+  border: 1px solid #ededed;
+}
+
+li {
+  list-style: none;
+}
+
+#list {
+  border: 1px solid #ededed;
+}
