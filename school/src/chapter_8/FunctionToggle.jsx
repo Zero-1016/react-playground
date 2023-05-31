@@ -9,9 +9,9 @@ export default function FunctionToggle() {
     }
 
     // 방법 2. arrow function을 사용하여 정의
-    const handleClick = () => {
-        setIsToggleOn((isToggleOn) => !isToggleOn);
-    };
+    // const handleClick = () => {
+    //     setIsToggleOn((isToggleOn) => !isToggleOn);
+    // };
 
     return <button onClick={handleClick}>{isToggleOn ? '켜짐' : '꺼짐'}</button>;
 }
