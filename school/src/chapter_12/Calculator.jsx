@@ -38,9 +38,6 @@ const Calculator = () => {
     const celsius = scale === 'f' ? tryConvert(temperature, toCelsius) : temperature;
     const fahrenheit = scale === 'c' ? tryConvert(temperature, toFahrenheit) : temperature;
 
-    const handleChange = (event) => {
-        setTemperature(event.target.value);
-    };
 
     return (
         <div>

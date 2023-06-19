@@ -1,0 +1,12 @@
+.FancyBorder-blue {
+    color : blue;
+    border: 1px solid blue;
+  }
+  
+  .Dialog-title {
+    color: rgb(35,143,58);
+  }
+  
+  .Dialog-message{
+    color:gray
+  }
